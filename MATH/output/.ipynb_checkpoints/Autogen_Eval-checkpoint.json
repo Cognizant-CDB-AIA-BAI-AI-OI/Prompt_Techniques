@@ -1,0 +1,1 @@
+[{"i": 0, "pred_label": "\\boxed{\\sqrt{6}}", "label": "\\sqrt{22}", "res": "False", "usage": {"prompt_tokens": 100, "completion_tokens": 1, "total_tokens": 101}}]
