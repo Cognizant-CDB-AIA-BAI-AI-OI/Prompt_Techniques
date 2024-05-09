@@ -9,8 +9,8 @@ from tenacity import (
 import openai
 
 
-AZURE_OPENAI_LLM_KEY="2385062848954a9298a700004a37dde0"
-AZURE_OPENAI_BASE="https://cb-genai-172a-france.openai.azure.com/"
+AZURE_OPENAI_LLM_KEY=""
+AZURE_OPENAI_BASE=""
 AZURE_OPENAI_VERSION="2023-07-01-preview"
 AZURE_OPENAI_CHATMODEL="gpt-4-turbo"
 

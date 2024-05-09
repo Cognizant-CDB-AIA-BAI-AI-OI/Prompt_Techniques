@@ -35,7 +35,7 @@ openai.api_type = "azure"
 openai.api_version = "2023-03-15-preview"
 
 # fill in your OpenAI API key in the {} below, format: "custum_api_name": "your_api_key"
-API_dic = {"mrityunjoypanday-gpt4": "d020880e0119447fbde26d3dcfb09bd7"}
+API_dic = {"": ""}
 
 API_name_key_list = list(API_dic.items())
 default_engine = None

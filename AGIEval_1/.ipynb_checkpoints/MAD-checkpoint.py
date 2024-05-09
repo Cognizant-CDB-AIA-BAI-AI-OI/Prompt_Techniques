@@ -12,10 +12,10 @@ from multiprocessing.pool import ThreadPool
 import threading
 
 
-openai.api_type = "azure"
-openai.api_base = "https://mrityunjoypanday-gpt4.openai.azure.com/"
-openai.api_version = "2023-03-15-preview"
-openai.api_key = "d020880e0119447fbde26d3dcfb09bd7"
+openai.api_type = ""
+openai.api_base = ""
+openai.api_version = ""
+openai.api_key = ""
 
 
     

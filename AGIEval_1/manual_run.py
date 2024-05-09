@@ -10,10 +10,9 @@ from tqdm import tqdm
 
 import openai
 openai.api_type = "azure"
-openai.api_base = "https://mrityunjoypanday-gpt4.openai.azure.com/"
-openai.api_version = "2023-03-15-preview"
-#openai.api_key = "6e0a21fe1ab048c6aa248eba8209c515"
-openai.api_key = "d020880e0119447fbde26d3dcfb09bd7"
+openai.api_base = ""
+openai.api_version = ""
+openai.api_key = ""
 
 
 dataset_name_list = [
