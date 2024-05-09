@@ -1,0 +1,28 @@
+Steps in choosing Clusters:
+
+1. It gets the score for each cluster and puts those scores into a list.
+
+
+2. It uses a "softmax" to turn those scores into something like chances or probabilities. This formula uses a "temperature" value that can make the chances spread out more evenly or focus more on the higher scores. The temperature changes as the program runs, which can affect how the chances are spread.
+
+	result = scipy.special.softmax(logits / temperature, axis=-1)
+
+
+3. It decides how many clusters to pick based on how many are available or a set number it can't go over.
+
+	functions_per_prompt = min(len(self._clusters), self._functions_per_prompt)
+
+
+4. It then does weighted random pick some of the clusters based on their chances, so clusters with higher scores are more likely to be picked, but there's still a chance for others.
+	np.random.choice(len(signatures), size=functions_per_prompt, p=probabilities)
+
+
+
+Steps in Choosing program from Cluster:
+
+1. Get string length of all programs present in this Cluster.
+2. Calcualte the normalized score:
+	normalized_lengths = (np.array(self._lengths) - min(self._lengths)) / (
+        max(self._lengths) + 1e-6)
+3. It uses the softmax formula on the negative of these normalized lengths, effectively turning smaller lengths into higher probabilities.
+4. With these probabilities, it is doing weighted random selection of one of the programs. Programs with smaller lengths have a higher chance of being selected due to how the probabilities were calculated.
