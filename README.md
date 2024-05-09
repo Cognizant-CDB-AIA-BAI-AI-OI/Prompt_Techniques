@@ -1,14 +1,14 @@
 <h1>Prompt Techniques.</h1>
 
 <ul>
-  <li>Chain of Thought</li>
+  <li>Zero shot  [link](https://github.com/Cognizant-CDB-AIA-BAI-AI-OI/Prompt_Techniques/blob/master/MATH/Zeroshot.ipynb) </li>
+  <li>Zero shot COT [link]([https://github.com/Cognizant-CDB-AIA-BAI-AI-OI/Prompt_Techniques/blob/master/MATH/Zeroshot.ipynb](https://github.com/Cognizant-CDB-AIA-BAI-AI-OI/Prompt_Techniques/blob/master/MATH/Zeroshot_CoT.ipynb)) </li>
+  <li>Few shot</li>
+  <li>Few shot COT</li>
   <li>Multi-agent Debate</li>
   <li>Reflexion</li>
   <li>Program of Thought</li>
-  <li>Zero shot</li>
-  <li>Zero shot COT</li>
-  <li>Few shot</li>
-  <li>Few shot COT</li>
+  
   <li>Self-Critic</li>
   <li>Autoplan</li>
   <li>AutoGen</li>
